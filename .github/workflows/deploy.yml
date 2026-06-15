@@ -25,6 +25,9 @@ jobs:
       - name: Build static files
         run: bash scripts/build-static.sh
 
+      - name: Deploy local static server
+        run: bash scripts/deploy-local-server.sh
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
